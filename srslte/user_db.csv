@@ -1,11 +1,11 @@
 #                                                                                           
 # .csv to store UE's information in HSS                                                     
-# Kept in the following format: "Name,Auth,IMSI,Key,OP_Type,OP,AMF,SQN,QCI,IP_alloc"      
+# Kept in the following format: "Name,Auth,IMSI,Key,OP_Type,OP/OPc,AMF,SQN,QCI,IP_alloc"  
 #                                                                                           
 # Name:     Human readable name to help distinguish UE's. Ignored by the HSS                
-# IMSI:     UE's IMSI value                                                                 
 # Auth:     Authentication algorithm used by the UE. Valid algorithms are XOR               
 #           (xor) and MILENAGE (mil)                                                        
+# IMSI:     UE's IMSI value                                                                 
 # Key:      UE's key, where other keys are derived from. Stored in hexadecimal              
 # OP_Type:  Operator's code type, either OP or OPc                                          
 # OP/OPc:   Operator Code/Cyphered Operator Code, stored in hexadecimal                     
@@ -17,4 +17,4 @@
 #           With a valid IPv4 (e.g. '172.16.0.2') the UE will have a statically assigned IP.
 #                                                                                           
 # Note: Lines starting by '#' are ignored and will be overwritten                           
-ue3,mil,724110000037980,d1db253527f74ee087f6eef87e5d64d6,opc,3fed1a5d3775eee38b988c1044d3a081,9001,00000000239c,7,dynamic
+ue3,mil,724110000037980,d1db253527f74ee087f6eef87e5d64d6,opc,3fed1a5d3775eee38b988c1044d3a081,9001,000000002b35,7,dynamic
